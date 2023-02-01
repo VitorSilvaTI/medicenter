@@ -1,0 +1,511 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height:120px;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #727272;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+nav .active a, li a:hover{
+    background-color: #39aae1;
+    color: #FFFFFF;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    width: 100%;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner_headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1{
+    color: #FFF;
+    font-size: 70px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.425);
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner_headline h2{
+    color: #FFF;
+    font-size: 21px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.425);
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options{
+    height: 210px;
+    display: flex;
+}
+
+.banner1, .banner2, .banner3{
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner1 a:hover, .banner2 a:hover{
+    background-color: #41c0ff;
+}
+
+
+.banner_title{
+    font-size: 21px;
+}
+
+.banner_description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    padding: 5px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.weekname{
+    border-bottom: 1px solid #3964c9;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.weekname .hour{
+    font-size: 13px;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text{
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget_title_bar{
+    background-color: #36a9e1;
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+
+.widget_body_blocks{
+    display: flex;
+    min-width: 328px;
+    flex-wrap: wrap;
+}
+
+.widget_body_blocks_desc{
+    display: flex;
+    background-color: #02a2dc;
+    margin-bottom: 25px;
+    min-width: 138px;
+    min-height: 138px;
+    margin-right: 25px;
+}
+
+.widget_body_title_text{
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 40px;
+}
+
+.widget_body_title_network{
+    margin-bottom: 20px;
+}
+
+.widget_body_title_network .network{
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-top: 12px;
+    border-bottom: 1px solid #CCC;
+}
+
+
+.network a{
+    color: blue;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.network a:hover{
+    color: #0079c7;
+    text-decoration: underline;
+}
+
+.icon{
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+aside .qr_code .area_code img{
+    margin: 25px auto 40px 40px;
+}
+
+article{
+    flex: 1;
+    min-width: 250px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+article .news_data{
+    display: flex;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news_posted_at{
+    background-color: #2b4c99;
+    margin-right: 3px;
+    padding: 10px;
+    font-size: 12px;
+    color: #FFF;
+}
+
+article .news_comments{
+    background-color: #39aae1;
+    padding: 10px;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article .news_timeline img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+article .news_title{
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+article .news_description{
+    font-size: 15px;
+    color: #5c5c5c;
+    line-height: 25px;
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu{
+    display: flex;
+    flex: 1;
+}
+
+.fm_1_title, .fm_2_title, .fm_3_title{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.fm_1_description, .fm_2_description, .fm_3_description{
+    font-size: 13px;
+}
+
+.footer_menu a{
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+}
+
+.fm_1, .fm_2, .fm_3{
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.fm_1{
+    background-color: #39aae1;
+}
+
+.fm_2{
+    background-color: #0079c7;
+}
+
+.fm_3{
+    background-color: #2b4c99;
+}
+
+.conteiner_column{
+    flex-direction: column;
+}
+
+.footer_area{
+    display: flex;
+    color: #FFF;
+}
+
+.footer_item{
+    flex: 1;
+}
+
+.footer_item .widget_title_text{
+    color: #FFF;
+    font-size: 17px;
+}
+
+.footer_copy .footer_copy_title{
+    color: #5c5c5c;
+    border-top: 1px solid #2c2c2c;
+    margin-top: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.footer_copy_title strong{
+    color: #FFF;
+}
+
+.footer_item .widget_body_text{
+    color: #8d8d8d;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 13px;
+    margin-right: 54px;
+    line-height: 21px;
+}
+
+.widget_body_text strong{
+    color: #FFF;
+}
+.footer_item .widget_body_text_contact{
+    color: #8d8d8d;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.footer_item .widget_body_text_contact2 strong{
+    color: white;
+    font-size: 13px;
+}
+
+.footer_item .widget_body_text_contact2{
+    margin-right: 25px;
+}
+
+.footer_item .post_data{
+    color: #449fbf;
+}
+
+.footer-icons img{
+    background-color: #212121;
+    padding: 5px;
+}
+
+.footer-icons a{
+    text-decoration: none;
+}
+
+.menu_mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    background-color: #39aae1;
+    height: 3px;
+}
+
+@media (max-width:600px){
+    .banner_headline h1{
+        font-size: 50px;
+        padding: 20px;
+    }
+    .banner_headline h2{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .banner_options{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .conteiner{
+        flex-direction: column;
+    }
+
+    #geral section, #geral aside{
+        padding: 20px;
+    }
+
+    #geral section{
+        margin-top: 150px;
+    }
+
+    aside .qr_code .area_code img{
+        margin: 0px
+    }
+
+    aside .widget_body_blocks{
+        flex-direction: column;
+        max-height: 300px
+    }
+
+    .widget_body_blocks{
+        max-width: 100px;
+    }
+
+    .widget_body_blocks_desc{
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .footer_menu{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer_item{
+        padding: 20px;
+    }
+
+    .footer_item .widget_body_text_contact{
+        justify-content: flex-start;
+    }
+
+    .footer_item .widget_body_text_contact2{
+        padding-left: 30px;
+        margin-right: 0px;
+    }
+
+    .footer_area{
+        flex-direction: column;
+    }
+
+    .footer_copy{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    header{
+        height: auto;
+    }
+
+    header .conteiner{
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        background-color: #FFF;
+        
+    }
+
+    .logo{
+        padding-left: 20px;
+    }
+    .menu_mobile{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+}
+
