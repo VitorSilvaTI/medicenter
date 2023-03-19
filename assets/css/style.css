@@ -222,7 +222,7 @@ nav .active a, li a:hover{
     background-color: rgba(128, 128, 128, 0.171);
 }
 
-aside .qr_code .area_code img{
+aside .area_code img{
     margin: 25px auto 40px 40px;
 }
 
@@ -435,7 +435,7 @@ footer{
         margin-top: 150px;
     }
 
-    aside .qr_code .area_code img{
+    aside .area_code img{
         margin: 0px
     }
 
